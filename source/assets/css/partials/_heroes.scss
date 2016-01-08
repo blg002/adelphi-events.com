@@ -1,0 +1,60 @@
+.hero {
+	background: {
+		position: 50% 50%;
+		repeat: no-repeat;
+		size: cover;
+	}
+	padding: rem(105) rem(35) rem(35);
+	color: white;
+	font-family: $font-family-caviar;
+	position: relative;
+
+	&.about    { background-image: url(/assets/img/heroes/about.jpg); }
+	&.services { background-image: url(/assets/img/heroes/services.jpg); }
+	&.contact  { background-image: url(/assets/img/heroes/contact.jpg); }
+	&.blog     { background-image: url(/assets/img/heroes/blog.jpg); }
+}
+
+.hero-wrap {
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(center);
+	padding: 35px;
+	height: 450px;
+
+	// &.border {
+	// 	border: 7px solid $gold;
+	// 	@include border-image( url(/assets/img/texture/gold.jpg) 7 repeat );
+	// }
+}
+
+.hero-heading {
+	@include background-clip(text);
+	@include text-fill-color(transparent);
+	// margin: rem(30) 0;
+	margin: 0;
+	font-size: rem(130);
+	font-weight: $font-weight-bold;
+	letter-spacing: tracking(400);
+	text-transform: uppercase;
+	color: $gold;
+	background: {
+		image: url(/assets/img/texture/gold.jpg);
+		repeat: no-repeat;
+		position: 50% 50%;
+	}
+}
+
+.hero-body {
+	text-align: center;
+}
+
+.hero-bar {
+	padding: rem(20) 0;
+	background-color: rgba(white, 0.65);
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

@@ -1,0 +1,25 @@
+.toggle-target {
+	margin-right: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $dark-gray;
+	font-size: rem(21);
+	font-weight: $font-weight-bold;
+
+	[class*=iconz] { font-size: rem(31); }
+
+	&:hover, &:active, &:focus, &.is-selected { color: $green; }
+}
+
+.blog-imgs {
+	margin: rem(70) rem(-5);
+
+	@include respond-to(min-width, 415px) {
+		@include display-flex;
+		@include justify-content(space-between);
+	}
+}
+
+.blog-img {
+	margin: 0 rem(5);
+}

@@ -1,0 +1,21 @@
+<% wrap_layout :layout do %>
+
+  <section class="section typeset small">
+  	<div class="container narrow arrows">
+
+  		<div class="blog-imgs mt0">
+	  		<% current_page.data.hero_imgs.each do |img| %>
+	  			<%= image_tag img, alt: "", class: "blog-img" %>
+	  		<% end %>
+  		</div>
+
+		  <h1 class="uppercase"><%= current_article.title %></h1>
+
+      <%= yield %>
+
+		  <img src="/assets/img/arrows/arrows-left.png" alt="" class="arrows-left">
+		  <img src="/assets/img/arrows/arrows-right.png" alt="" class="arrows-right">
+    
+    </div>
+  </section>
+<% end %>

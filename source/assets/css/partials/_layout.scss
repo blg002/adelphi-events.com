@@ -1,0 +1,57 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html {
+  font-size: percentage($base-font-size/16);
+  font-weight: $base-font-weight;
+  line-height: 1;
+  font-family: $base-font-family;
+  color: $text-color;
+  overflow-y: scroll !important;
+}
+
+body {
+  font-size: rem($body-font-size);
+  background-color: white;
+  min-width: 320px;
+}
+
+img { display: inline-block; vertical-align: middle; max-width: 100%; height: auto; }
+
+.container {
+  margin: 0 auto;
+  width: $base-width;
+  max-width: $base-max-width;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  &.narrow {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}
+
+.arrows {
+  position: relative;
+  overflow: hidden;
+}
+
+.arrows-left {
+  position: absolute;
+  left: rem(10);
+  top: rem(200);
+}
+
+.arrows-right {
+  position: absolute;
+  right: rem(10);
+  top: 0;
+}
+
+.main {
+  .page-blog:not(.blog_index) &,
+  .page-gallery &,
+  .page-press & {
+    padding-top: rem(92);
+  }
+    
+}

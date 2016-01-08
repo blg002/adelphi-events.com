@@ -1,0 +1,48 @@
+// Caviar Dreams
+@include font-face(
+  "caviar_dreams",
+  font-files(
+    "/assets/fonts/caviar-dreams/caviardreams-webfont.woff",
+    "/assets/fonts/caviar-dreams/caviardreams-webfont.ttf",
+    "/assets/fonts/caviar-dreams/caviardreams-webfont.svg#caviar_dreamsregular"
+  ),
+  "/assets/fonts/caviar-dreams/caviardreams-webfont.eot",
+  normal,
+  normal
+);
+
+@include font-face(
+  "caviar_dreams",
+  font-files(
+    "/assets/fonts/caviar-dreams/caviardreams_italic-webfont.woff",
+    "/assets/fonts/caviar-dreams/caviardreams_italic-webfont.ttf",
+    "/assets/fonts/caviar-dreams/caviardreams_italic-webfont.svg#caviar_dreamsitalic"
+  ),
+  "/assets/fonts/caviar-dreams/caviardreams_italic-webfont.eot",
+  normal,
+  italic
+);
+
+@include font-face(
+  "caviar_dreams",
+  font-files(
+    "/assets/fonts/caviar-dreams/caviar_dreams_bold-webfont.woff",
+    "/assets/fonts/caviar-dreams/caviar_dreams_bold-webfont.ttf",
+    "/assets/fonts/caviar-dreams/caviar_dreams_bold-webfont.svg#caviar_dreamsbold"
+  ),
+  "/assets/fonts/caviar-dreams/caviar_dreams_bold-webfont.eot",
+  $font-weight-bold,
+  normal
+);
+
+@include font-face(
+  "caviar_dreams",
+  font-files(
+    "/assets/fonts/caviar-dreams/caviardreams_bolditalic-webfont.woff",
+    "/assets/fonts/caviar-dreams/caviardreams_bolditalic-webfont.ttf",
+    "/assets/fonts/caviar-dreams/caviardreams_bolditalic-webfont.svg#caviar_dreamsbold_italic"
+  ),
+  "/assets/fonts/caviar-dreams/caviardreams_bolditalic-webfont.eot",
+  $font-weight-bold,
+  italic
+);

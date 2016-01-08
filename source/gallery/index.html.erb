@@ -1,0 +1,53 @@
+---
+title: Gallery
+banner: white
+---
+
+<section class="section">
+  <div class="container">
+
+    <ul class="mason gallery">
+      <% data.gallery.each do |event| %>
+        <li class="mason-item has-placard <%= event.classes %>">
+          <a href="#<%= make_path(event.name) %>" data-gallery-target data-scroll>
+            <img src="/assets/img/gallery/<%= make_path(event.name) %>/thumb/placard.jpg" alt="" class="mason-img">
+            <div class="gallery-placard">
+              <h4 class="gallery-placard-heading"><%= event.location %></h4>
+              <p class="gallery-placard-subheading"><%= event.name %></p>
+            </div>
+          </a>
+        </li>
+      <% end %>
+      <li class="mason-item">
+        <img src="/assets/img/home/adelphi-badge.jpg" alt="Adelphi Events" class="mason-img">
+      </li>
+    </ul>
+
+    <% data.gallery.each do |event| %>
+      <div class="event hide" id="<%= make_path(event.name) %>" data-event>
+        <h3 class="event-heading <%= make_path(event.name) %>" style="background-image: url(/assets/img/gallery/<%= make_path(event.name) %>/banner.png);">
+          <span class="visuallyhidden"><%= event.name %>, <%= event.location %></span>
+        </h2>
+
+        <% if event.body %>
+          <div class="typeset event-body">
+            <p><%= event.body %></p>
+          </div>
+        <% end %>
+
+        <ul class="mason gallery">
+          <% Dir.entries("source/assets/img/gallery/#{make_path(event.name)}/thumb").each do |img| %>
+            <% next if img == '.' or img == '..' or img == 'placard' or img == '.DS_Store' %>
+
+            <li class="mason-item">
+              <a href="/assets/img/gallery/<%= make_path(event.name) %>/<%= img %>" class="fancybox" rel="group">
+                <img src="/assets/img/gallery/<%= make_path(event.name) %>/thumb/<%= img %>" alt="" class="mason-img">
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  </div>
+</section>

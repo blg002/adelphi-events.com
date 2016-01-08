@@ -1,0 +1,13 @@
+{
+  "name": "ap",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "imagesloaded": "~3.1.8",
+    "normalize-scss": "~3.0.1",
+    "pagepiling.js": "~1.5.1",
+    "masonry": "~3.3.2",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.1.1",
+    "fancyBox": "~2.1.5"
+  }
+}

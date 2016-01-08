@@ -1,0 +1,40 @@
+.excerpts {
+
+	&[data-toggle="grid"] {
+		@include respond-to(min-width, 415px) {
+			@include display-flex;
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+		}
+	}
+}
+
+.excerpt {
+	margin-bottom: rem(100);
+	padding: rem(25);
+	background-color: white;
+
+	[data-toggle="grid"] & {
+		@include respond-to(min-width, 415px) {
+			width: 49%;
+		}
+	}
+}
+
+.excerpt-heading {
+	font-size: rem(28);
+	color: $text-color;
+	font-family: $heading-font-family;
+}
+
+.excerpt-target {
+	@include link( $color:$text-color, $reverse:true );
+}
+
+.excerpt-img { width: 100%; }
+
+.excerpt-body {
+	font-size: rem(18);
+  line-height: $body-line-height;
+  font-weight: $font-weight-regular;
+}

@@ -1,0 +1,32 @@
+@mixin hover(
+    $color,
+    $decoration: false,
+    $important: null
+  ) {
+
+  &:hover, &:active, &:focus {
+    color: $color $important;
+
+    @if $decoration {
+      text-decoration: $decoration $important;
+    }
+  }
+}
+
+@mixin link(
+    $color: $anchor-font-color,
+    $hover-color: darken($color, 15%),
+    $reverse: false,
+    $important: null
+  ) {
+
+  $link-decoration:  if($reverse, none, underline);
+  $hover-decoration: if($reverse, underline, none);
+
+  &:link, &:visited {
+    text-decoration: $link-decoration $important;
+    color: $color $important;
+  }
+
+  @include hover($hover-color, $hover-decoration, $important)
+}

@@ -1,0 +1,59 @@
+.header {
+  padding: 21px 35px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  font-family: $font-family-caviar;
+  background-color: rgba(white, 0.75);
+
+  &.open {
+    height: 100%;
+    background-color: rgba(white, 0.75);
+  }
+
+  &.white  { border-bottom: 1px solid $text-color; }
+  &.black  { background-color: rgba(white, 0.65); }
+  .page-index & { background-color: transparent; }
+}
+
+.logo {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: rem(20);
+  position: relative;
+  z-index: 2;
+  font-family: $font-family-caviar;
+
+  @include respond-to(min-width, 321px) {
+    font-size: rem(47);
+  }
+}
+
+.logo-target {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-adelphi {
+  font-weight: $font-weight-bold;
+  // color: $green;
+
+  .open         & { color: $green !important; }
+  .header.dark  & { color: $green; }
+  .header.white & { color: $green; }
+  .header.black & { color: black; }
+}
+
+.logo-events {
+  font-weight: $font-weight-light;
+  // color: $green;
+
+  .open         & { color: $text-color !important; }
+  .header.dark  & { color: white; }
+  .header.white & { color: $text-color; }
+  .header.black & { color: black; }
+  
+  @include respond-to(min-width, 321px) {
+    margin-left: rem(-10);
+  }
+}

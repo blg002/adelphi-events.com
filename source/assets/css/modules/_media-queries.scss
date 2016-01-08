@@ -1,0 +1,3 @@
+@mixin respond-to($feature, $point) {
+  @media screen and ($feature: $point) { @content; }
+}

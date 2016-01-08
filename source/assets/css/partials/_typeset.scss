@@ -1,0 +1,122 @@
+.typeset {
+
+  a {
+    @include link($reverse:true);
+    &.rev-link { @include link($reverse:true); }
+
+    h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+      @include link($reverse:true);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $heading-font-family;
+  }
+
+  h1, .h1 {
+    font-size: $h1-font-size;
+  }
+  
+  h2, .h2 {
+    margin-top: rem(100);
+    color: $green;
+    text-transform: uppercase;
+    font-size: rem($h2-font-size);
+    font-weight: $font-weight-bold;
+
+    &:first-child { margin-top: 0; }
+  }
+
+  h3, .h3 {
+    font-size: rem($h3-font-size);
+  }
+  
+  h4, .h4 {
+    font-size: rem($h4-font-size);
+    text-transform: uppercase;
+    color: $green;
+  }
+  
+  h5, .h5 {
+    font-size: rem($h5-font-size);
+    color: $text-color;
+  }
+
+  h6, .h6 {
+    font-size: rem($h6-font-size);
+  }
+
+  .major {
+    color: $gray;
+    text-transform: uppercase;
+    font-size: rem(35);
+    font-weight: $font-weight-regular;
+    letter-spacing: tracking(400);
+  }
+
+  p {
+    line-height: $body-line-height;
+    font-weight: $font-weight-regular;
+  }
+
+  ul {
+    padding-left: rem(23);
+
+    li {
+      padding-top: rem(3);
+      padding-bottom: rem(3);
+    }
+
+    ul {
+      padding-top: rem(3);
+      padding-left: 0;
+    }
+  }
+
+  &.small { font-size: rem(18); }
+
+  .quote {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: rem(60);
+    font: {
+      family: $font-family-caviar;
+      size: rem(20);
+      weight: $font-weight-regular;
+    }
+  }
+
+  .service-heading {
+    margin-top: rem(44);
+    text-align: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 49%;
+      border: 0;
+      border-top: 4px solid $gold;
+      @include border-image( url(/assets/img/texture/gold.jpg) 4 repeat );
+    }
+
+    img {
+      position: relative;
+      z-index: 3;
+      background: white;
+    }
+  }
+
+  .cite {
+    color: $green;
+    font: {
+      size: rem(20);
+      weight: $font-weight-regular;
+    }
+  }
+
+  .left  { margin-right: rem(20) !important; }
+  .right { margin-left: rem(20) !important; }
+}

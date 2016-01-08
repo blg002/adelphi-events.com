@@ -1,0 +1,47 @@
+// Fonts
+$font-family-caviar: 'caviar_dreams', arial, sans-serif;
+$font-family-proxima: 'proxima nova', arial, sans-serif;
+$font-family-century: 'century gothic', arial, 'helvetica neue', helvetica, sans-serif;
+
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Base font
+$base-font-weight: $font-weight-regular;
+$base-font-size: 10;
+$base-font-family: $font-family-proxima;
+
+// Body font
+$body-font-size: 18;
+$body-line-height: (24/$body-font-size);
+
+// Headings
+$heading-font-family: $font-family-caviar;
+$h1-font-size: inherit;
+$h2-font-size: 28;
+$h3-font-size: 24;
+$h4-font-size: 22;
+$h5-font-size: 19;
+$h6-font-size: 16;
+
+// Layout
+$base-width: 100%;
+$base-max-width: 1366px;
+
+// Colors
+$black: #333;
+$white: #fff;
+$green: #3db049;
+$gray: #d1d3d4;
+$dark-gray: #6d6e70;
+$gold: #ceac65;
+
+$text-color: #58585b;
+$secondary-color: $green;
+$anchor-font-color: $green;
+
+$mobile    : max-width, 320px;
+$mobile-up : min-width, 321px;
+$tablet    : max-width, 768px;
+$tablet-up : min-width, 769px;

@@ -1,0 +1,35 @@
+.jump-links {
+	@include respond-to(min-width, 415px) {
+		@include display-flex;
+		@include flex-wrap(wrap);
+	}
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: {
+		size: rem(28);
+		family: $font-family-caviar;
+		weight: $font-weight-bold;
+	}
+	text-transform: uppercase;
+
+  li {
+  	width: percentage(1/3);
+  	text-align: center;
+
+  	&:nth-child(1) a { background-image: url(/assets/img/buttons/watercolor-first.jpg); }
+  	&:nth-child(2) a { background-image: url(/assets/img/buttons/watercolor-second.jpg); }
+  	&:nth-child(3) a { background-image: url(/assets/img/buttons/watercolor-third.jpg); }
+  }
+
+	a {
+		@include link( $color:$text-color, $reverse:true );
+		padding: rem(27) 0;
+		display: block;
+		background: {
+	    position: 50% 50%;
+	    repeat: no-repeat;
+	    size: cover;
+	  }
+	}
+}

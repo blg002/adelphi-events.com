@@ -1,0 +1,8 @@
+@function rem($font-size){
+  @return #{$font-size / $base-font-size}rem
+};
+
+@function tracking($target) {
+  // @return #{($target / 1000) * 10}px
+  @return #{($target / 500)}rem
+};

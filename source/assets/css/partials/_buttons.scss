@@ -1,0 +1,14 @@
+.button {
+	margin: rem(10) 0;
+	border: 0;
+	padding: rem(20);
+	background-color: $green;
+	color: white;
+	text-transform: uppercase;
+	font-size: rem(18);
+
+	&.large  { padding-left: rem(54); padding-right: rem(54); font-size: rem(32); }
+	&.xlarge { padding-left: rem(75); padding-right: rem(75); font-size: rem(44); }
+
+	.collapse & { margin: 0; }
+}

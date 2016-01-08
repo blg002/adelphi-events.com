@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= page_title %></title>
+
+  <%= feed_tag :atom, "/feed/blog.xml", title: "Adelphi Productions blog" %>
+
+  <%= stylesheet_link_tag 'main' %>
+</head>
+
+<body class="page-<%= page_classes %>">
+  <%= partial 'layouts/partials/header' %>
+
+  <main class="main" role="main">
+    <%= yield %>
+  </main>
+
+  <%= partial 'layouts/partials/footer' unless data.page.hide_footer %>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <%= javascript_include_tag 'main' %>
+
+  <%#= partial 'layouts/snippets/google-analytics' %>
+
+</body>
+</html>

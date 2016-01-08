@@ -1,0 +1,12 @@
+.mason {
+	@include pie-clearfix;
+}
+
+.mason-item {
+  float: left;
+  height: 430px;
+
+  &.sizer      { width: 33%; position: absolute; }
+	&.width-1_3  { width: 33%; }
+	&.width-2_3  { width: 66%; }
+}

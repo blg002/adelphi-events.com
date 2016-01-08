@@ -1,0 +1,47 @@
+.text-right  { text-align: right !important; }
+.text-left   { text-align: left !important; }
+.text-center { text-align: center !important; }
+
+.center { margin-left: auto !important; margin-right: auto !important; }
+
+.block        { display: block !important; }
+.inline       { display: inline !important; }
+.inline-block { display: inline-block !important; }
+
+.left           { float: left !important; }
+.right          { float: right !important; }
+.lowercase      { text-transform: lowercase !important; }
+.uppercase      { text-transform: uppercase !important; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; }
+
+.relative     { position: relative !important; }
+.absolute     { position: absolute !important; }
+.static       { position: static !important; }
+.block        { display: block !important; }
+.inline       { display: inline !important; }
+.inline-block { display: inline-block !important; }
+
+@for $i from 0 through 5 {
+  .m#{$i}   { margin:        #{$i}rem !important; }
+  .mt#{$i}  { margin-top:    #{$i}rem !important; }
+  .mb#{$i}  { margin-bottom: #{$i}rem !important; }
+
+  .p#{$i}   { padding:        #{$i}rem !important; }
+  .pt#{$i}  { padding-top:    #{$i}rem !important; }
+  .pb#{$i}  { padding-bottom: #{$i}rem !important; }
+}
+
+.clearfix {
+  &::before, &::after { content: ''; display: table; }
+  &::after { clear: both; }
+}
+
+.font-caviar   { font-family: $font-family-caviar !important; }
+.font-proxima  { font-family: $font-family-proxima !important; }
+.font-century  { font-family: $font-family-century !important; }
+
+@include respond-to(min-width, 736px) {
+	.flex                               { @include display-flex; }
+	.flex-justify-content-space-between { @include justify-content(space-between); }
+	.flex-align-items-center            { @include align-items(center); }
+}

@@ -1,0 +1,69 @@
+.hamburger-wrap {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 2;
+}
+
+.hamburger {
+  width: 34px;
+  height: 24px;
+  cursor: pointer;
+
+  &:hover, &:active, &:focus {
+    .hamburger-patties {
+      &:before { top: -3px; }
+      &:after  { bottom: 7px; }
+    }
+  }
+}
+
+.hamburger-patties {
+  width: 34px;
+  margin: 9px 0;
+  height: 5px;
+  background-color: white;
+
+  .green &  { background-color: $green; }
+  .white &  { background-color: $green; }
+  .opaque & { background-color: $green; }
+  .black &  { background-color: black; }
+
+  .is-selected & { background-color: transparent !important; }
+
+  &:before, &:after {
+    @include transition( all 0.3s );
+    width: 34px;
+    height: 5px;
+    background-color: white;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+
+    .green &  { background-color: $green; }
+    .white &  { background-color: $green; }
+    .opaque & { background-color: $green; }
+    .black &  { background-color: black; }
+
+    .is-selected & { background-color: $green !important; }
+  }
+
+  &:before {
+    top: -1px;
+
+    .is-selected & {
+      top: 10px !important;
+      @include rotate(-45deg);
+    }
+  }
+
+  &:after  {
+    bottom: 9px;
+
+    .is-selected & {
+      bottom: 18px !important;
+      @include rotate(45deg);
+    }
+  }
+}

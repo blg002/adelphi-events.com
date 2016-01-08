@@ -1,0 +1,49 @@
+---
+title: Blog
+---
+
+
+<section class="hero blog">
+  <div class="hero-wrap">
+    <div class="hero-body">
+      <h1 class="hero-heading">Blog</h1>
+    </div>
+  </div>
+
+  <div class="hero-bar">
+    <div class="container flex flex-justify-content-space-between flex-align-items-center">
+      <div>
+        <a href="#grid" class="toggle-target" data-toggle-target="grid">Grid <i class="iconz-grid" aria-hidden="true"></i></a>
+        <a href="#scroll" class="toggle-target is-selected" data-toggle-target="scroll">Scroll <i class="iconz-scroll" aria-hidden="true"></i></a>
+      </div>
+
+      <!--
+      <form class="form collapse small">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email">
+        <button class="button">Subscribe</button>
+      </form>
+      -->
+    </div>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="container">
+
+    <div class="excerpts" data-toggle="scroll">
+      <% page_articles.each_with_index do |article, i| %>
+        <article class="excerpt">
+          <%= image_tag article.data.thumbnail, class: "excerpt-img", alt: "" %>
+
+          <h2 class="excerpt-heading"><%= link_to article.title, article, class: "excerpt-target" %></h2>
+
+          <div class="excerpt-body">
+            <%= article.summary %>
+          </div>
+        </article>
+      <% end %>
+    </div>
+
+  </div>
+</section>

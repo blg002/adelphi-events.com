@@ -1,0 +1,28 @@
+@import "pagepiling.js/jquery.pagepiling";
+
+#pp-nav {
+	right: 28px !important;
+}
+
+#pp-nav span {
+	@include transform( rotate(45deg) );
+	border-radius: 0;
+	width: 10px;
+	height: 10px;
+}
+
+#pp-nav li .active {
+	top: -3px;
+	left: -3px;
+
+	span {
+		@include transform( rotate(0) );
+		color: $green;
+		border: 0;
+		background-color: transparent;
+
+		&:before {
+			@extend .iconz-diamond:before;
+		}
+	}
+}

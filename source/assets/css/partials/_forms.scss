@@ -1,0 +1,72 @@
+.form {
+	font: {
+		family: $font-family-caviar;
+		size: rem(18);
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	label {
+		@include squish-text;
+	}
+
+	input {
+		margin-bottom: rem(10);
+		padding: rem(10);
+		width: 100%;
+		border: 0;
+		border-bottom: rem(1) solid $gray;
+	}
+
+	textarea {
+		margin-bottom: rem(20);
+		padding: rem(10) rem(5);
+		width: 100%;
+		border: 1px solid $gray;
+		min-height: 300px;
+	}
+
+	input, textarea {
+		@include input-placeholder {
+			color: $green;
+			text-transform: uppercase;
+		}
+	}
+
+	&.collapse {
+		margin-top: rem(20);
+
+		@include respond-to(min-width, 736px) {
+			width: 50%;
+			margin: 0;
+		}
+
+		input {
+			margin: 0;
+			padding-top: rem(17);
+			padding-bottom: rem(17);
+			width: 65%;
+			float: left;
+			border: 0;
+			background-color: #f1f2f2;
+			color: #a7a9ac;
+
+			@include input-placeholder { color: #a7a9ac; }
+		}
+
+		.button {
+			width: 35%;
+			float: right;
+		}
+	}
+
+	&.small {
+		input { font-size: rem(20); }
+	}
+}

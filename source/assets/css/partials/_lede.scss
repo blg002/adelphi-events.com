@@ -1,0 +1,18 @@
+.lede {
+	padding-top: rem(60);
+	padding-bottom: rem(60);
+	font-size: rem(28);
+	font-family: $font-family-proxima;
+	font-weight: $font-weight-light;
+	line-height: (38/24);
+	text-align: justify;
+	text-transform: uppercase;
+
+	p { margin: 0; }
+}
+
+.small-lede {
+	font-size: rem(28);
+	font-variant: small-caps;
+	text-transform: uppercase;
+}

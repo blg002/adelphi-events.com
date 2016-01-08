@@ -1,0 +1,60 @@
+{
+  "checksum": {
+    "previous": "f632f2f8460e4c032f40d409ac3f81f758367dbc7782e9cb27ce7113879a9e64",
+    "current": "f632f2f8460e4c032f40d409ac3f81f758367dbc7782e9cb27ce7113879a9e64"
+  },
+  "fonts": [
+    "source/assets/css/iconz/iconz_f632f2f8460e4c032f40d409ac3f81f7.ttf",
+    "source/assets/css/iconz/iconz_f632f2f8460e4c032f40d409ac3f81f7.svg",
+    "source/assets/css/iconz/iconz_f632f2f8460e4c032f40d409ac3f81f7.woff",
+    "source/assets/css/iconz/iconz_f632f2f8460e4c032f40d409ac3f81f7.eot"
+  ],
+  "glyphs": {
+    "arrow": {
+      "codepoint": 61700,
+      "source": "source/assets/fonts/iconz/svgs/arrow.svg"
+    },
+    "diamond": {
+      "codepoint": 61703,
+      "source": "source/assets/fonts/iconz/svgs/diamond.svg"
+    },
+    "grid": {
+      "codepoint": 61701,
+      "source": "source/assets/fonts/iconz/svgs/grid.svg"
+    },
+    "scroll": {
+      "codepoint": 61702,
+      "source": "source/assets/fonts/iconz/svgs/scroll.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".iconz-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "iconz",
+    "force": false,
+    "input": {
+      "templates": "source/assets/fonts/iconz/svgs",
+      "vectors": "source/assets/fonts/iconz/svgs"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "source/assets/css",
+      "fonts": "source/assets/css/iconz",
+      "preview": "source/assets/css/iconz"
+    },
+    "preprocessor_path": "/assets/css/iconz",
+    "quiet": false,
+    "templates": [
+      "scss"
+    ]
+  },
+  "templates": [
+    "source/assets/css/_iconz.scss"
+  ]
+}

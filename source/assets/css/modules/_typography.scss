@@ -1,0 +1,7 @@
+@mixin text-fill-color( $value ) {
+  -webkit-text-fill-color: $value;
+  -moz-text-fill-color: $value;
+  -o-text-fill-color: $value;
+  -ms-text-fill-color: $value;
+  text-fill-color: $value;
+}

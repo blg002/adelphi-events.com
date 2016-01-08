@@ -1,0 +1,76 @@
+.has-placard {
+	cursor: pointer;
+	position: relative;
+
+	&:hover, &:active, &:focus {
+		.gallery-placard {
+		  @include display-flex();
+		}
+	}
+}
+
+.gallery-placard {
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+  padding: rem(30);
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: $green;
+	display: none;
+}
+
+.gallery-placard-heading {
+	margin: 0 0 rem(15);
+	font: {
+		family: $font-family-caviar;
+		size: rem(36);
+		weight: $font-weight-bold;
+	}
+	text-transform: uppercase;
+}
+
+.gallery-placard-subheading {
+	margin: 0;
+	font: {
+		family: $font-family-caviar;
+		size: rem(22);
+		weight: $font-weight-regular;
+	}
+}
+
+// Event details
+.event {
+	&.hide { display: none; }
+	&.show { display: block; }
+}
+
+.event-heading {
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+  margin-top: rem(120);
+  padding: rem(20);
+  height: 300px;
+  color: white;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;  
+}
+
+.event-body {
+	font: {
+		family: $font-family-century;
+		size: rem(28);
+		weight: $font-weight-regular;
+	}
+	line-height: (56/28);
+
+	p {
+		&::first-line { text-transform: uppercase; }
+	}
+}

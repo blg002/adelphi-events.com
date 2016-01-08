@@ -1,0 +1,11 @@
+@import "../iconz";
+
+
+[class*=iconz] {
+  display: inline-block;
+
+  &::before {
+    speak: none;
+    vertical-align: middle;
+  }
+}

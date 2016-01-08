@@ -1,0 +1,24 @@
+.section {
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+	background: {
+		repeat: no-repeat;
+		position: 50% 50%;
+		size: cover;
+	}
+
+  &.short {
+	  padding-top: rem(30);
+	  padding-bottom: rem(30);
+  }
+
+  &.watercolor {
+
+    .container {
+      position: absolute;
+      top: rem(30);
+    }
+  }
+
+  &.gray { background: #f1f2f2; }
+}

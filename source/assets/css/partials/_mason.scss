@@ -1,0 +1,30 @@
+.mason {
+  @include pie-clearfix;
+  margin: 0 percentage(-3/918) rem(30);
+  padding: 0;
+  list-style: none;
+
+}
+
+.mason-item {
+  float: left;
+  margin: percentage(3/918);
+  width: percentage(300/918);
+  text-align: center;
+
+  &.width-2x {
+    width: percentage(606/918);
+  }
+}
+
+.mason-target {
+  padding: rem(20);
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.mason-img {
+  width: 100%;
+}
