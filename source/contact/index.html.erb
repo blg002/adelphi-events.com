@@ -20,27 +20,30 @@ title: Contact
       </div>
     </div>
 
-    <form class="form">
+    <form class="form" method="POST" action="http://formspree.io/info@adelphi-events.com">
+      <input type="hidden" name="_subject" value="Website Contact Form Submission">
+      <input type="text" name="_gotcha" class="visuallyhidden">
+
       <ul>
         <li>
           <label for="name">First + Last name</label>
-          <input id="name" type="text" placeholder="First + Last name">
+          <input type="text" name="name" id="name" placeholder="First + Last name" required>
         </li>
         <li>
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
         </li>
         <li>
           <label for="phone">Phone</label>
-          <input id="phone" type="text" placeholder="Phone">
+          <input type="text" name="phone" id="phone" placeholder="Phone">
         </li>
         <li>
           <label for="date">Date of proposed event</label>
-          <input id="date" type="text" placeholder="Date of proposed event">
+          <input type="text" name="date" id="date" placeholder="Date of proposed event">
         </li>
         <li>
           <label for="details">Tell us everything…</label>
-          <textarea placeholder="Tell us everything…"></textarea>
+          <textarea placeholder="Tell us everything…" name="body"></textarea>
         </li>
         <li>
           <button class="button large">Submit</button>
