@@ -4,6 +4,8 @@
 * [nodejs](https://nodejs.org/)
   * [bower](http://bower.io/)
 
+The contact form is powered by [Formspree](http://formspree.io/).
+
 
 1. Install dependencies
 
