@@ -1,4 +1,4 @@
-//= require fancybox/source/jquery.fancybox.js
+//= require fancyBox/source/jquery.fancybox.js
 
 
 (function($, window, undefined) {
