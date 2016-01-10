@@ -48,18 +48,8 @@
 	&.show { display: block; }
 }
 
-.event-heading {
-  @include display-flex();
-  @include flex-direction(column);
-  @include justify-content(flex-end);
-  margin-top: rem(120);
-  padding: rem(20);
-  height: 300px;
-  color: white;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right;  
+.event-banner {
+	width: 100%;
 }
 
 .event-body {

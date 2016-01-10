@@ -4,7 +4,7 @@
 
 (function($, window, undefined) {
 
-	var $gallery = $('.mason').imagesLoaded( function() {
+	var $gallery = $('[data-mason]').imagesLoaded( function() {
 	  $gallery.masonry({
 			itemSelector: '.mason-item',
 			columnWidth: '.mason-item',
