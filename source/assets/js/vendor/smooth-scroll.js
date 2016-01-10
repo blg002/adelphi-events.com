@@ -3,6 +3,8 @@
 
 (function($, window, undefined) {
 
-	smoothScroll.init();
+	smoothScroll.init(
+		updateURL: false
+	);
 
 })(jQuery, this);
