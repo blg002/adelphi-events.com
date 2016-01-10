@@ -6,7 +6,7 @@ banner: white
 <section class="section">
   <div class="container">
 
-    <ul class="mason gallery">
+    <ul class="mason gallery" data-mason>
       <% data.gallery.each do |event| %>
         <li class="mason-item has-placard <%= event.classes %>">
           <a href="#<%= make_path(event.name) %>" data-gallery-target data-scroll>
@@ -25,9 +25,9 @@ banner: white
 
     <% data.gallery.each do |event| %>
       <div class="event hide" id="<%= make_path(event.name) %>" data-event>
-        <h3 class="event-heading <%= make_path(event.name) %>" style="background-image: url(/assets/img/gallery/<%= make_path(event.name) %>/banner.png);">
-          <span class="visuallyhidden"><%= event.name %>, <%= event.location %></span>
-        </h2>
+        <img src="/assets/img/gallery/<%= make_path(event.name) %>/banner.png" alt="<%= event.name %>, <%= event.location %>" class="event-banner">
+
+        <h3><%= event.name %></h3>
 
         <% if event.body %>
           <div class="typeset event-body">

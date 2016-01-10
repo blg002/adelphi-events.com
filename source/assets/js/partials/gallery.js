@@ -1,4 +1,5 @@
 (function($, window, undefined) {
+	
 	var eventTargets = document.querySelectorAll('[data-gallery-target]');
 	var events = document.querySelectorAll('[data-event]');
 
@@ -19,4 +20,5 @@
 		document.getElementById(couple).classList.remove('hide');
 		document.getElementById(couple).classList.add('show');
 	};
+
 })(jQuery, this);
