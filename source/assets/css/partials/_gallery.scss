@@ -13,7 +13,7 @@
   @include flex-direction(column);
   @include justify-content(flex-end);
   padding: rem(30);
-	background-color: white;
+	background-color: rgba(white, 0.75);
 	position: absolute;
 	top: 0;
 	left: 0;

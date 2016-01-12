@@ -2,19 +2,27 @@
 
 .press-item {
 	overflow: auto;
-	margin-bottom: rem(30);
+	margin-bottom: rem(60);
 
-	&:nth-child(odd) .press-target  { float: left; margin-right: rem(20) !important; }
-	&:nth-child(even) .press-target { float: right; margin-left: rem(20) !important; }
+	&:nth-child(even) .press-media {
+    @include order(2);
+    margin: 0 0 0 rem(40);
+  }
+
+  @include respond-to(min-width, 415px) {
+    @include display-flex;
+  }
+}
+
+.press-media {
+  margin-right: rem(40);
+  width: 25%;
 }
 
 .press-target {
-	border: 1px solid $green;
-  padding: rem(20);
   text-decoration: none;
   text-align: center;
   display: block;
-  width: 150px;
 }
 
 .press-body {
@@ -23,4 +31,24 @@
     weight: $font-weight-regular;
   }
   line-height: (28/20);
+  width: 75%;
+}
+
+.press-quote {
+  margin: 0;
+  font: {
+    family: $font-family-caviar;
+    size: rem(20);
+    weight: $font-weight-regular;
+  }
+
+  p { margin-top: 0; }
+}
+
+.press-cite {
+  color: $green;
+  font: {
+    size: rem(20);
+    weight: $font-weight-regular;
+  }
 }

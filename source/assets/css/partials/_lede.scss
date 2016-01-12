@@ -12,7 +12,10 @@
 }
 
 .small-lede {
-	font-size: rem(28);
-	font-variant: small-caps;
+	font: {
+		size: rem(24);
+		variant: small-caps;
+		family: $font-family-caviar;
+	}
 	text-transform: uppercase;
 }
