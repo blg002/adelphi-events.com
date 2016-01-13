@@ -1,21 +1,19 @@
 .lede {
-	padding-top: rem(60);
-	padding-bottom: rem(60);
-	font-size: rem(28);
-	font-family: $font-family-proxima;
-	font-weight: $font-weight-light;
-	line-height: (38/24);
+	margin-bottom: rem(80);
+	font-size: rem(23);
+	font-family: $font-family-caviar;
+	font-weight: $font-weight-regular;
+	line-height: (38/23);
 	text-align: justify;
 	text-transform: uppercase;
 
-	p { margin: 0; }
-}
-
-.small-lede {
-	font: {
-		size: rem(24);
-		variant: small-caps;
-		family: $font-family-caviar;
+	p {
+		line-height: inherit;
+		font-weight: inherit;
 	}
-	text-transform: uppercase;
+
+  a {
+    @include link($reverse:true);
+    &.rev-link { @include link($reverse:true); }
+  }
 }

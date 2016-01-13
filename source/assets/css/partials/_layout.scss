@@ -50,5 +50,12 @@ img { display: inline-block; vertical-align: middle; max-width: 100%; height: au
   .page-press & {
     padding-top: rem(92);
   }
-    
+}
+
+.cols {
+  @include respond-to(min-width, 415px) {
+    @include column-count(2);
+  }
+
+  ul { @include column-break(inside, avoid); }
 }

@@ -12,13 +12,17 @@
 	  padding-bottom: rem(30);
   }
 
-  &.watercolor {
+  &.gray { background: #f1f2f2; }
+}
 
-    .container {
-      position: absolute;
-      top: rem(30);
-    }
+.watercolor {
+  background: {
+    image: url(/assets/img/sections/watercolor.png);
+    position: 50% 0;
+    repeat: no-repeat;
+    size: contain;
   }
 
-  &.gray { background: #f1f2f2; }
+  &.small { background-image: url(/assets/img/sections/watercolor-small.png); }
+  &.tight { background-image: url(/assets/img/sections/watercolor-tight.png); }
 }
