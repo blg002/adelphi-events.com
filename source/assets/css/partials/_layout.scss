@@ -23,14 +23,11 @@ img { display: inline-block; vertical-align: middle; max-width: 100%; height: au
   max-width: $base-max-width;
   padding-left: 35px;
   padding-right: 35px;
-
-  &.narrow {
-    padding-left: 95px;
-    padding-right: 95px;
-  }
 }
 
 .arrows {
+  padding-left: rem(50);
+  padding-right: rem(50);
   position: relative;
   overflow: hidden;
 }
@@ -53,5 +50,12 @@ img { display: inline-block; vertical-align: middle; max-width: 100%; height: au
   .page-press & {
     padding-top: rem(92);
   }
-    
+}
+
+.cols {
+  @include respond-to(min-width, 415px) {
+    @include column-count(2);
+  }
+
+  ul { @include column-break(inside, avoid); }
 }

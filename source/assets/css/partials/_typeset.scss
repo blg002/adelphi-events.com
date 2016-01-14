@@ -32,9 +32,13 @@
   }
   
   h4, .h4 {
+    margin-bottom: rem(10);
     font-size: rem($h4-font-size);
+    font-weight: $font-weight-regular;
     text-transform: uppercase;
     color: $green;
+
+    + p { margin-top: 0; }
   }
   
   h5, .h5 {
@@ -44,14 +48,6 @@
 
   h6, .h6 {
     font-size: rem($h6-font-size);
-  }
-
-  .major {
-    color: $gray;
-    text-transform: uppercase;
-    font-size: rem(35);
-    font-weight: $font-weight-regular;
-    letter-spacing: tracking(400);
   }
 
   p {
@@ -75,45 +71,33 @@
 
   &.small { font-size: rem(18); }
 
-  .quote {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: rem(60);
+  .service-heading {
+    margin: rem(50) 0 0;
+    text-align: center;
+    font: {
+      family: $font-family-dancing;
+      size: rem(60);
+      weight: $font-weight-regular;
+    }
+    color: $green;
+  }
+
+  .about-heading {
     font: {
       family: $font-family-caviar;
-      size: rem(20);
+      size: rem(22);
       weight: $font-weight-regular;
     }
-  }
+    color: $dark-gray;
 
-  .service-heading {
-    margin-top: rem(44);
-    text-align: center;
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 49%;
-      border: 0;
-      border-top: 4px solid $gold;
-      @include border-image( url(/assets/img/texture/gold.jpg) 4 repeat );
-    }
-
-    img {
-      position: relative;
-      z-index: 3;
-      background: white;
-    }
-  }
-
-  .cite {
-    color: $green;
-    font: {
-      size: rem(20);
-      weight: $font-weight-regular;
+    span {
+      font: {
+        family: $font-family-dancing;
+        size: rem(50);
+        weight: $font-weight-regular;
+      }
+      color: $green;
+      text-transform: none;
     }
   }
 
