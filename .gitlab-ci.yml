@@ -23,7 +23,7 @@ production:
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerinit ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    - rsync -avP build/ deploy@vps.kpmullin.com:public/
+    - rsync -av --delete-after build/ deploy@vps.kpmullin.com:public/
   stage: deploy
   only:
     - master
