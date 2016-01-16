@@ -12,7 +12,7 @@
 .gallery-placard {
   @include flex-direction(column);
   @include justify-content(flex-end);
-  padding: rem(30);
+  padding: rem(10);
 	background-color: rgba(white, 0.75);
 	position: absolute;
 	top: 0;
@@ -24,10 +24,10 @@
 }
 
 .gallery-placard-heading {
-	margin: 0 0 rem(15);
+	margin: 0 0 rem(5);
 	font: {
 		family: $font-family-caviar;
-		size: rem(36);
+		size: rem(18);
 		weight: $font-weight-bold;
 	}
 	text-transform: uppercase;
@@ -37,19 +37,17 @@
 	margin: 0;
 	font: {
 		family: $font-family-caviar;
-		size: rem(22);
+		size: rem(15);
 		weight: $font-weight-regular;
 	}
 }
 
 // Event details
 .event {
+	margin-top: rem(200);
+	
 	&.hide { display: none; }
 	&.show { display: block; }
-}
-
-.event-banner {
-	width: 100%;
 }
 
 .event-body {

@@ -1,5 +1,8 @@
 .home-a {
-	width: rem(215);
+	.home-intro & {
+		position: relative;
+		bottom: 22px;
+	}
 }
 
 .home-target {
@@ -67,16 +70,18 @@
 .home-services { background-image: url(/assets/img/home/services.jpg); }
 .home-press    { background-image: url(/assets/img/home/press.jpg); }
 .home-contact  { background-image: url(/assets/img/home/contact.jpg); }
+.home-info     { background-image: url(/assets/img/home/info.jpg); }
 
-.home-info-in {
+.home-info {
 	padding: rem(95) rem(35) rem(35);
-	height: 100%;
 	position: relative;
-	background: {
-		image: url(/assets/img/home/info.jpg);
-		position: 50% 50%;
-		repeat: no-repeat;
-		size: cover;
+
+	footer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		.footer { padding-bottom: rem(50); }
 	}
 }
 
@@ -136,9 +141,9 @@
 	border-radius: 100%;
 }
 
-.home-info-badge {
-	position: absolute;
-	bottom: rem(35);
-	right: rem(35);
-	width: rem(120);
-}
+// .home-info-badge {
+// 	position: absolute;
+// 	bottom: rem(35);
+// 	right: rem(35);
+// 	width: rem(120);
+// }

@@ -4,12 +4,25 @@
 		size: rem(18);
 	}
 
-	ul {
-		padding-left: 0;
+	.form-fields {
+		padding: 0;
+		margin: 0 rem(-10);
+		list-style: none;
+
+		@include respond-to(min-width, 415px) {
+			@include display-flex();
+			@include flex-wrap(wrap);
+		}
 	}
 
-	li {
-		list-style: none;
+	.form-field {
+		@include respond-to(min-width, 415px) {
+			padding: rem(10);
+			width: 50%;
+		}
+
+		&.full { width: 100%; }
+		// &.full { width: 100%; }
 	}
 
 	label {

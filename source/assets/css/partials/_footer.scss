@@ -1,13 +1,10 @@
 .footer {
-  @include display-flex;
-  @include align-items(center);
-  @include justify-content(space-between);
   margin-top: rem(35);
   border-top: 2px solid $green;
   padding-top: rem(50);
   padding-bottom: rem(90);
   font-size: rem(18);
-  font-family: $font-family-proxima;
+  font-family: $font-family-caviar;
   letter-spacing: tracking(200);
   color: $dark-gray;
   text-align: left;
@@ -15,6 +12,12 @@
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  @include respond-to(min-width, 415px) {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
   }
 }
 

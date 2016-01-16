@@ -4,7 +4,7 @@
 		repeat: no-repeat;
 		size: cover;
 	}
-	padding: rem(105) rem(35) rem(35);
+	padding: rem(115) rem(35) rem(35);
 	color: white;
 	font-family: $font-family-caviar;
 	position: relative;
@@ -20,27 +20,29 @@
 	@include align-items(center);
 	@include justify-content(center);
 	padding: 35px;
-	height: 450px;
 
-	// &.border {
-	// 	border: 7px solid $gold;
-	// 	@include border-image( url(/assets/img/texture/gold.jpg) 7 repeat );
-	// }
+	@include respond-to(min-width, 415px) {
+		height: 450px;
+	}
 }
 
 .hero-heading {
 	@include background-clip(text);
 	@include text-fill-color(transparent);
-	// margin: rem(30) 0;
 	margin: 0;
-	font-size: rem(130);
+	font-size: rem(70);
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 	color: $gold;
+	letter-spacing: tracking(-200);
 	background: {
 		image: url(/assets/img/texture/gold.jpg);
 		repeat: no-repeat;
 		position: 50% 50%;
+	}
+
+	@include respond-to(min-width, 415px) {
+		font-size: rem(130);
 	}
 }
 
