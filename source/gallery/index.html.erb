@@ -18,17 +18,10 @@ banner: white
           </a>
         </li>
       <% end %>
-      <li class="mason-item">
-        <img src="/assets/img/home/adelphi-badge.jpg" alt="Adelphi Events" class="mason-img">
-      </li>
     </ul>
 
     <% data.gallery.each do |event| %>
       <div class="event hide" id="<%= make_path(event.name) %>" data-event>
-        <img src="/assets/img/gallery/<%= make_path(event.name) %>/banner.png" alt="<%= event.name %>, <%= event.location %>" class="event-banner">
-
-        <h3><%= event.name %></h3>
-
         <% if event.body %>
           <div class="typeset event-body">
             <p><%= event.body %></p>
@@ -36,6 +29,10 @@ banner: white
         <% end %>
 
         <ul class="mason gallery">
+          <li class="mason-item">
+            <img src="/assets/img/gallery/<%= make_path(event.name) %>/thumb/banner.jpg" alt="" class="mason-img">
+          </li>
+
           <% Dir.entries("source/assets/img/gallery/#{make_path(event.name)}/thumb").each do |img| %>
             <% next if img == '.' or img == '..' or img == 'placard' or img == '.DS_Store' %>
 

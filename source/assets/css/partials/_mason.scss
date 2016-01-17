@@ -1,6 +1,6 @@
 .mason {
   @include pie-clearfix;
-  margin: 0 percentage(-3/918) rem(30);
+  margin: 0 percentage(-5/730) rem(30);
   padding: 0;
   list-style: none;
 
@@ -8,12 +8,12 @@
 
 .mason-item {
   float: left;
-  margin: percentage(3/918);
-  width: percentage(300/918);
+  margin: percentage(5/730);
+  width: percentage(136/730);
   text-align: center;
 
   &.width-2x {
-    width: percentage(606/918);
+    width: percentage(282/730);
   }
 }
 
