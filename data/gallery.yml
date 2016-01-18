@@ -8,10 +8,10 @@
   location: Danville, CA
   name: Parya + Dipak
 -
-  location: SF, CA
+  location: San Francisco, CA
   name: Colleen + Dan
 -
-  location: SF, CA
+  location: San Francisco, CA
   name: Ashley + Bobby
 -
   location: Tiburon, CA
@@ -23,21 +23,24 @@
 -
   location: East Thetford, VT
   name: Hilary + Ralph
--
-  location: Livermore, CA
-  name: Pooja + Jesse
--
-  location: Ben Lomand, CA
-  name: Ashley + Joshua
--
-  location: SF, CA
-  name: Kaitlyn + Eamon
-  classes: width-2x
+# -
+#   location: Livermore, CA
+#   name: Pooja + Jesse
 -
   location: Princeville, HI
   name: Steffanie + Jon-Erik
 -
+  location: Ben Lomand, CA
+  name: Ashley + Joshua
+-
+  location: San Francisco, CA
+  name: Kaitlyn + Eamon
+  classes: width-2x
+-
   location: Calistoga, CA
+  name: Coming Soon
+-
+  location: San Francisco, CA
   name: Coming Soon
 -
   location: Rutherford, CA

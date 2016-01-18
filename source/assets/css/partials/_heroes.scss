@@ -27,18 +27,22 @@
 }
 
 .hero-heading {
-	@include background-clip(text);
-	@include text-fill-color(transparent);
 	margin: 0;
 	font-size: rem(70);
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 	color: $gold;
 	letter-spacing: tracking(-200);
-	background: {
-		image: url(/assets/img/texture/gold.jpg);
-		repeat: no-repeat;
-		position: 50% 50%;
+
+	.backgroundcliptext & {
+		@include background-clip(text);
+		@include text-fill-color(transparent);
+		
+		background: {
+			image: url(/assets/img/texture/gold.jpg);
+			repeat: no-repeat;
+			position: 50% 50%;
+		}
 	}
 
 	@include respond-to(min-width, 415px) {
