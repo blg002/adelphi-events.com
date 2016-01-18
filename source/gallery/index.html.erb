@@ -30,14 +30,14 @@ banner: white
 
         <ul class="mason gallery">
           <li class="mason-item">
-            <img src="/assets/img/gallery/<%= make_path(event.name) %>/thumb/banner.jpg" alt="" class="mason-img">
+            <img src="/assets/img/gallery/<%= make_path(event.name) %>/banner.jpg" alt="" class="mason-img">
           </li>
 
           <% Dir.entries("source/assets/img/gallery/#{make_path(event.name)}/thumb").each do |img| %>
             <% next if img == '.' or img == '..' or img == 'placard' or img == '.DS_Store' %>
 
             <li class="mason-item">
-              <a href="/assets/img/gallery/<%= make_path(event.name) %>/<%= img %>" class="fancybox" rel="group">
+              <a href="/assets/img/gallery/<%= make_path(event.name) %>/<%= img %>" class="fancybox" rel="group-<%= make_path(event.name) %>">
                 <img src="/assets/img/gallery/<%= make_path(event.name) %>/thumb/<%= img %>" alt="" class="mason-img">
               </a>
             </li>
