@@ -1,8 +1,11 @@
 .footer {
   margin-top: rem(35);
   border-top: 2px solid $green;
-  padding-top: rem(50);
-  padding-bottom: rem(90);
+}
+
+.footer-in {
+  padding-top: rem(25);
+  padding-bottom: rem(25);
   font-size: rem(18);
   font-family: $font-family-caviar;
   letter-spacing: tracking(200);
