@@ -16,4 +16,6 @@
     @include link($reverse:true);
     &.rev-link { @include link($reverse:true); }
   }
+
+  &.large { font-size: rem(30); }
 }

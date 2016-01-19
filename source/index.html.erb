@@ -83,7 +83,7 @@ hide_footer: true
       <li class="home-social-item">
         <a href="http://instagram.com/adelphievents" class="home-social-target">
           <img src="/assets/img/icons/instagram.svg" width="50" alt="Instagram" class="home-social-img">
-          <h3 class="home-social-heading">Instagram</h3>
+          <h3 class="home-social-heading">Instagram.</h3>
           <p class="home-social-subheading">Easier than stalking.</p>
         </a>
       </li>
@@ -91,7 +91,7 @@ hide_footer: true
     
     <!-- <p class="text-right mb0"><img src="/assets/img/home/adelphi-badge.jpg" alt="Adelphi Events" class="home-info-badge"></p> -->
 
-    <%= partial 'layouts/partials/footer' %>
+    <%= partial 'layouts/partials/footer', locals: { hide_social: true } %>
   </section>
 
 </div>

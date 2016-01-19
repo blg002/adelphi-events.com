@@ -21,7 +21,7 @@
 .inline       { display: inline !important; }
 .inline-block { display: inline-block !important; }
 
-@for $i from 0 through 5 {
+@for $i from 0 through 8 {
   .m#{$i}   { margin:        #{$i}rem !important; }
   .mt#{$i}  { margin-top:    #{$i}rem !important; }
   .mb#{$i}  { margin-bottom: #{$i}rem !important; }
