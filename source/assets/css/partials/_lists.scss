@@ -26,6 +26,8 @@
 		@include link( $color:$text-color, $reverse:true );
   	@include display-flex;
   	@include align-items(center);
+  	@include justify-content(center);
+  	margin: 0 auto;
 	  position: relative;
 	  overflow: hidden;
   	width: 195px;
