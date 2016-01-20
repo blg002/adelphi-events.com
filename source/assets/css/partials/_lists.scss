@@ -2,13 +2,13 @@
 	@include respond-to(min-width, 415px) {
 		@include display-flex;
 	}
-	margin: rem(300) 0 0;
+	margin: rem(180) 0 0;
 	padding: 0;
 	list-style: none;
 	text-transform: uppercase;
 	line-height: (32/27);
 	font: {
-		size: rem(27);
+		size: rem(25);
 		family: $font-family-caviar;
 		weight: $font-weight-regular;
 	}

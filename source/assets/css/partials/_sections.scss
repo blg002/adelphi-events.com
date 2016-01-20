@@ -20,9 +20,8 @@
     image: url(/assets/img/sections/watercolor.png);
     position: 50% 0;
     repeat: no-repeat;
-    size: contain;
   }
 
-  &.small { background-image: url(/assets/img/sections/watercolor-small.png); }
-  &.tight { background-image: url(/assets/img/sections/watercolor-tight.png); }
+  &.far { background-image: url(/assets/img/sections/watercolor-far.png); }
+  &.close { background-image: url(/assets/img/sections/watercolor-close.png); }
 }
