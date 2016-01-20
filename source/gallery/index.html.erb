@@ -49,7 +49,7 @@ banner: white
           </li>
 
           <% Dir.entries("source/assets/img/gallery/#{make_path(event.name)}/thumb").each do |img| %>
-            <% next if img == '.' or img == '..' or img == 'placard' or img == '.DS_Store' %>
+            <% next if img == '.' or img == '..' or img == 'placard.jpg' or img == '.DS_Store' %>
 
             <li class="mason-item">
               <a href="/assets/img/gallery/<%= make_path(event.name) %>/<%= img %>" class="fancybox" rel="group-<%= make_path(event.name) %>">
