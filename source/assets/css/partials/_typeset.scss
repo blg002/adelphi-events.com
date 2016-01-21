@@ -74,12 +74,19 @@
   .service-heading {
     margin: rem(50) 0 0;
     text-align: center;
+    color: $green;
     font: {
       family: $font-family-dancing;
       size: rem(60);
       weight: $font-weight-regular;
     }
-    color: $green;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 75px;
+      margin-top: -75px;
+    }
   }
 
   .about-heading {
