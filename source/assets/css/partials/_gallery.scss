@@ -1,3 +1,4 @@
+
 .has-placard {
 	cursor: pointer;
 	position: relative;
@@ -48,6 +49,13 @@
 	
 	&.hide { display: none; }
 	&.show { display: block; }
+
+	&::before {
+		content: '';
+		display: block;
+		height: 75px;
+		margin-top: -75px;
+	}
 }
 
 .event-body {

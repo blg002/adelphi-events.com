@@ -1,42 +1,66 @@
 -
   location: Chelsea, VT
   name: Kate + Nick
+  photographer: Ben Fleishman Photography
+  photographer_url: http://www.benfleishman.com/
 -
   location: Glen Ellen, CA
   name: Kevin + Katy
+  photographer: Christina McNeill Photography
+  photographer_url: http://www.christinamcneill.com/
 -
   location: Danville, CA
   name: Parya + Dipak
+  photographer: Eva Baker Photography
+  photographer_url: http://www.evabakerphotography.com/
 -
   location: San Francisco, CA
   name: Colleen + Dan
+  photographer: JennaBeth Photography
+  photographer_url: http://www.jennabeth.com/
 -
   location: San Francisco, CA
   name: Ashley + Bobby
+  photographer:  Fondly Forever Photography
+  photographer_url: http://fondlyforever.com/
 -
   location: Tiburon, CA
   name: Katie + Matt
   classes: width-2x
+  photographer: Alison Yin Photography
+  photographer_url: http://www.alisonyinweddings.com/
 -
   location: Mill Valley, CA
-  name:  Heather + Thayer
+  name: Heather + Thayer
+  photographer: Christina McNeill Photography
+  photographer_url: http://www.christinamcneill.com/
 -
   location: East Thetford, VT
   name: Hilary + Ralph
+  photographer: Gayle Brooker Photography
+  photographer_url: http://www.gaylebrooker.com/
 # -
 #   location: Livermore, CA
 #   name: Pooja + Jesse
 -
   location: Princeville, HI
   name: Steffanie + Jon-Erik
+  photographer: Sealight Studios
+  photographer_url: http://sealightstudios.com/
 -
   location: Ben Lomand, CA
   name: Ashley + Joshua
+  photographer: Christina McNeill Photography
+  photographer_url: http://www.christinamcneill.com/
 -
   location: San Francisco, CA
   name: Kaitlyn + Eamon
   classes: width-2x
+  photographer: Ed Tran Photography
+  photographer_url: http://edtranphotography.com/
 -
   location: Rutherford, CA
   name: Heather + Kevin
+  photographer: Christina McNeill Photography
+  photographer_url: http://www.christinamcneill.com/
   body: An unexpected sunny January afternoon made for a gorgeous wedding day for this happy couple. The wedding was completely DIY by Heather, the bride and founder of Adelphi Productions. Not a single detail was overlooked for the lucky twenty-eight guests. Wine Caves, Vineyards, and Oscar-worthy gift bags were only some of the elements of this stunning event.
