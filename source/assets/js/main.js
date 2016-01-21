@@ -13,3 +13,4 @@
 //= require vendor/masonry
 //= require vendor/smooth-scroll
 //= require vendor/fancybox
+//= require vendor/readmore

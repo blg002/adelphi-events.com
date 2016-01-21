@@ -12,7 +12,9 @@
   }
 
   &.publicity {
+    @include align-items(center);
     text-transform: uppercase;
+    color: $green;
     font: {
       family: $font-family-caviar;
       size: rem(30);
@@ -28,8 +30,9 @@
 
 .press-target {
   text-decoration: none;
-  text-align: center;
   display: block;
+  overflow: hidden;
+  color: $green;
 }
 
 .press-body {
@@ -37,6 +40,11 @@
   width: 90%;
 
   .publicity & p { margin: 0; }
+}
+
+.press-readmore {
+  color: $green;
+  cursor: pointer;
 }
 
 .press-quote {
